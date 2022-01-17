@@ -1,0 +1,3744 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: black;
+    /* background-color: blueviolet; */
+    /* width: 100%; */
+    scroll-behavior: smooth;
+    transition: .5s; 
+    box-sizing: border-box;
+    /* overflow-x:hidden; */
+    font-family: 'Red Hat Mono', monospace;
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+   
+}
+
+
+
+header{
+    
+    background-color: black;
+    /* background-color: blueviolet; */
+    width: 100%;
+    /* min-height:20%; */
+    /* position:relative; */
+} 
+
+ aside {
+    position: absolute;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    font-size: 24px;
+    color: rgba(44, 253, 7, 0.938);
+    background-color:black;
+    transition: .3s linear;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+li {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+li a{
+    text-decoration: none;
+    color: rgba(44, 253, 7, 0.938);
+}
+
+li a:hover{
+    color: rgb(41, 90, 13);
+}
+
+.active {
+    left: 0;
+}
+
+button {
+     position: relative;
+    top: 0px;
+    left: 0; 
+    margin: 0 30px;
+    padding: 10px 30px;
+    background-color: rgba(44, 253, 7, 0.938);
+    font-size: 36px; 
+    transition: .3s linear;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+} 
+
+.btn {
+    text-align: center;
+    background-color: black ;
+    border: none; 
+    color: rgba(44, 253, 7, 0.938);
+    padding: 5px; 
+    font-size: 40px; 
+    cursor: pointer; 
+}
+  
+  
+  .btn:hover {
+    background-color: rgba(23, 124, 6, 0.938);
+  
+}  
+
+.header1{
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    height: auto;
+    margin: 20px;
+    margin-left:5%;
+}
+
+
+.headerContacts{
+   color: rgba(44, 253, 7, 0.938);
+   text-decoration: none;
+   font-size: 20px;
+   /* margin-left:20%; */
+   font-weight: 600;
+}
+
+.headerContacts:hover {
+    opacity: 0.4;
+}
+
+.headerphone{
+    /* white-space: nowrap; */
+    color: rgba(44, 253, 7, 0.938);
+    font-size: 20px;
+   
+    /* text-align:right; */
+    margin-left: 50%;
+    font-weight: 600;   
+}
+
+.headerphone:hover {
+    opacity: 0.4;
+}
+
+
+
+    @media (min-width: 0px) and (max-width: 576px){
+       
+        
+        .header1{
+            display: none;
+        }
+        
+        .mainPage{
+            display: flex; 
+            width:100%;
+            height: 90vh;
+            background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1536924430914-91f9e2041b83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%; 
+            background-attachment: fixed;
+        }
+    
+        .About{
+             /* background-color: brown;   */
+            position: relative;
+            
+        }
+        
+        .About p{
+            font-family: 'Permanent Marker', cursive;
+            /* position: absolute;
+            top: 20px;
+            left:250px; */
+            margin-top:200px;
+            padding: 10px;
+            left:20%;
+            /* margin-left: 50px; */
+            text-align: center;
+            font-size: 65px;
+            font: bold;
+            line-height: 1.5;
+            color: rgba(44, 253, 7, 0.938);
+            opacity: 0.7;
+            overflow: hidden;
+        }
+        
+        .About h1{
+            /* transform: rotate(90deg); */
+            text-align: center;
+            opacity: 0.7;
+           margin-top: 90px; 
+        }
+        
+        .button{
+            text-decoration: none;
+            border: none;
+            font-family: 'Indie Flower', cursive;
+            font-size: 35px;
+            font-weight:bold;
+            color: rgba(44, 253, 7, 0.938);
+        }
+        
+        .button:hover {
+            
+            color: white;
+          }
+        
+          .Background{
+             /* background-color: red;      */
+           /* background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1517897286832-ba927d20e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJsYWNrJTIwYW5kJTIwZ3JlZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'); */
+           background-repeat: no-repeat;
+           background-size: cover;
+           /* display: block;  */
+           display: block;
+           /* justify-content: center; */
+           max-width: 100%; 
+           position: relative;
+           box-sizing: content-box;
+           height: auto;
+       }
+       
+       .firstDiv{
+           /* margin-bottom: 12px; */
+           /* background-color:darkcyan;   */
+           width: 100%;
+           height: 200vh;
+           background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1517897286832-ba927d20e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJsYWNrJTIwYW5kJTIwZ3JlZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'); 
+           display: block;
+            
+       }
+       
+       .photoMen{
+           position: absolute;
+            top:250px;
+            left:20%; 
+       }
+       
+        .BackgroundTekst{
+           font-family: 'Kolker Brush', cursive;
+           color: rgba(44, 253, 7, 0.938);
+           font-size: 120px;
+           font-weight: 500;
+           position:absolute; 
+           top:0%;
+           margin-left:20%;    
+       }
+       
+       .BackgroundTekst2{
+           font-family: 'Kolker Brush', cursive;
+           color: rgba(44, 253, 7, 0.938);
+           font-size: 120px;
+           font-weight: 500;
+           position:absolute; 
+           top:2%;
+           left: 50%;
+       }
+       
+        .secondPhoto{
+           
+           margin-left: 15%;
+           width: 50%;
+           height: 80%;
+           border-radius:100px;
+           box-shadow: 0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+       } 
+        
+        .photoWomenFirst{
+           
+           position: absolute;
+           top: 28%;
+           left: 30%;
+           text-align: center;
+           
+       } 
+       
+       .thirdPhoto{
+           
+           /* width: 50%;
+           height: 20%; */
+           /* width: 100%;
+           height: 20%; */
+           width: 180px;
+           height: 250px;
+           border-radius:300px;
+           box-shadow:       
+           0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+       }
+       
+        .photoWomen{
+           position:absolute; 
+           top:50%;
+           right:25%;
+       }  
+       
+       .fourthPhoto{
+           width: 180px;
+           height: 250px;
+           /* width: 90%;
+           height: 25%; */
+           border-radius:200px;
+           box-shadow:0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+       }
+       
+       .Joanna{
+           font-family: 'Red Hat Mono', monospace;
+           color: rgba(44, 253, 7, 0.938);
+           font-size: 10px;
+           font-weight: 500;
+           text-align: center;
+           position:absolute; 
+           /* left:25%; */
+           left: calc((100% / 2) - 90px);
+           top:20%;  
+           
+       }  
+       
+       .history{
+           font-family: 'Red Hat Mono', monospace;
+           color: rgba(44, 253, 7, 0.938);
+           font-size: 10px;
+           font-weight: 500;
+           position:absolute; 
+           /* margin-right: 200px;  */
+           text-align: center; 
+           /* left:27%; */
+           left: calc((100% / 2) - 90px);
+           top: 40%;
+           white-space: nowrap;
+           /* top: 850px; */
+           
+       } 
+
+       .secondDiv{
+        /* background-color: blue;  */
+        width: 100%;
+        height: 120vh;
+        background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1517897286832-ba927d20e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJsYWNrJTIwYW5kJTIwZ3JlZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+        position: relative;
+        display:block;
+     }
+     
+     .What{
+         font-family: 'Red Hat Mono', monospace;
+         color: rgba(44, 253, 7, 0.938);
+         font-size: 25px;
+         font-weight: 500;
+         position: absolute;
+         top:5%;
+         left: 20%;  
+     }
+     
+     .do{
+         font-family: 'Red Hat Mono', monospace;
+         color: rgba(44, 253, 7, 0.938);
+         font-size: 25px;
+         font-weight: 500;
+         font-family: 'Red Hat Mono', monospace;
+         color: rgba(44, 253, 7, 0.938);
+         font-size: 25px;
+         font-weight: 500;
+         position: absolute;
+         top:10%;
+         left: 35%;  
+         
+        white-space: nowrap;
+         
+     } 
+     
+     .shakeimage{
+         position:relative
+     }
+     
+     .mainPhotoSecondDiv{
+         position:absolute; 
+         top:30%;
+         left: 20%;
+         /* text-align: center; */
+     }
+     
+     .photoSecondDiv{
+         /* position: relative; */
+         width: 80%;
+         height: 70%;
+         border-radius:300px;
+         box-shadow:0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+     }
+     
+     .shoot{
+         font-family: 'Red Hat Mono', monospace;
+         color: rgba(44, 253, 7, 0.938);
+         font-size: 10px;
+         font-weight: 500;
+         position:absolute;
+         top:19%;
+         /* left:50%; */
+         right: 25%;
+         white-space: nowrap;
+     }
+     
+     .produce{
+         font-family: 'Kolker Brush', cursive;
+         color: rgba(44, 253, 7, 0.938);
+         font-size: 110px;
+         white-space: nowrap;
+         font-weight: 500;
+         position:absolute; 
+         top:60%; 
+         left:10%;
+         /* left:200px;
+         top:550px; */
+     }
+     
+     .photoShoots{
+         font-family: 'Kolker Brush', cursive;
+         color: rgba(44, 253, 7, 0.938);
+         font-size: 100px;
+         font-weight: 500;
+         position:absolute;  
+         /* text-align:center; */
+         top:70%;
+         left:22%;
+         /* top:-70px; */
+     }
+     
+     .since{
+         font-family: 'Red Hat Mono', monospace;
+         color: rgba(44, 253, 7, 0.938);
+         font-size: 10px;
+         font-weight: 500;
+         position:absolute; 
+         bottom:5%;
+         left:15%;
+         white-space: nowrap;
+         
+     }
+     
+     .seventeen{
+         position: absolute; 
+        left:18%;
+         bottom: 10%;
+         /* margin-left:200px;
+         bottom:-50px;  */
+     }
+     
+     .seventeen img{
+         /* position: relative; */
+         width: 35%;
+     }
+     
+     
+     
+      .arrow{
+        position:absolute;
+        top:18%;
+        left: 100px; 
+     }
+     
+     .arrow img{
+         /* position: relative; */
+         width: 100%;
+     }
+     
+     .arrow2{
+         position: absolute;
+         top:20.5%;
+         left: 100px; 
+        
+     }
+     
+     .arrow2 img{
+         /* position: relative; */
+         width: 100%;
+         opacity: 0.4;
+     }
+     
+     .arrow3{
+         position: absolute;
+         top:23%;
+         left: 100px; 
+         
+     }
+     
+     .arrow3 img{
+         /* position: relative; */
+         width: 100%;
+         opacity: 0.2;
+     } 
+     
+      .round{
+         position: absolute; 
+        bottom: 7%;
+         right: 10%;
+         
+     } 
+     
+     .round img{
+         position: relative;
+         width: 45%;
+     }
+     
+     footer{
+        background-color: black;
+        /* background-color: darkcyan; */
+        width: 100%;
+        height: 18vh; 
+        position: relative;
+        /* margin:50px; */
+        display: block;
+        
+        }
+        
+        footer p{
+            text-align: center;
+            padding: 15px;
+            
+        }
+        
+        
+        .faceLink{
+            position: absolute;
+            left: 30%; 
+             top:45%;
+        }
+
+        .facebookFooter{
+           
+            width: 100%;
+            text-align: center;
+        }
+        
+        .instagramLink{
+            position: absolute;
+            left: 45%;
+            top:45%;
+        }
+        
+        .instagramFooter{
+            width: 100%;
+        }
+        
+        .telegramLink{
+            position: absolute;
+            left: 60%;
+            top:45%;
+        }
+
+        .telegramFooter{
+            width: 100%;
+        }
+        
+        .JoanaFooter{
+            text-align: left;
+            font-family: 'Red Hat Mono', monospace;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 15px;
+            font-weight: bold;
+            font-weight: 500;
+            position: relative; 
+            top:20%; 
+            white-space: nowrap;
+        }
+        
+        
+        
+        .phoneFooter{
+            text-align: right;
+            font-family: 'Red Hat Mono', monospace;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 12px;
+            font-weight: bold;
+            font-weight: 500;
+            position: relative;
+            top:-40%;
+            margin-top: 10%;
+            white-space: nowrap;
+        }
+
+    }
+
+    @media (min-width: 360px) and (min-height:640px) and (max-height:700px){
+        
+        .photoWomenFirst{
+           
+            position: absolute;
+            top: 28%;
+            left: 0%;
+            text-align: center;
+            
+        } 
+        
+        .thirdPhoto{
+            
+            /* width: 50%;
+            height: 20%; */
+            /* width: 100%;
+            height: 20%; */
+            width: 180px;
+            height: 250px;
+            border-radius:300px;
+            box-shadow:       
+            0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+        }
+        
+         .photoWomen{
+            position:absolute; 
+            top:52%;
+            /* left: 40%; */
+        }  
+        
+        .fourthPhoto{
+            width: 160px;
+            height: 220px;
+            /* width: 190%;
+            height: 25%; */
+            border-radius:200px;
+            box-shadow:0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+        }
+
+        .mainPage{
+            width:100%;
+            height: 95vh;
+        }
+
+        .About p{
+            margin-top:100px;
+            margin-left: 15px;
+        }
+        
+        .About h1{
+           margin-top: 90px; 
+        }
+
+        .firstDiv{
+            width: 100%;
+            height:220vh;
+        }
+
+        .photoMen{
+            position: absolute;
+            top:180px;
+            left:20%; 
+        }
+
+        .photoWomenFirst{ 
+            position: absolute;
+            top: 28%;
+            text-align: center;  
+        } 
+        
+        .thirdPhoto{
+            width:50%;
+            height: 25%;
+            border-radius:300px;
+            box-shadow:       
+            0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+        }
+
+        .history{
+           position:absolute;
+           left:25%;
+           top: 42%;      
+        }  
+
+
+        .phoneFooter{
+            position: relative;
+            top:-50%;
+            margin-top: 10%;
+            white-space: nowrap;
+        }        
+
+    }
+
+    @media (min-width: 400px) and (min-height:740px) and (max-height:900px){
+        
+        .firstDiv{
+            /* margin-bottom: 12px; */
+            /* background-color:darkcyan;   */
+            width: 100%;
+            height: 170vh;
+            background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1517897286832-ba927d20e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJsYWNrJTIwYW5kJTIwZ3JlZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'); 
+            display: flex;
+            flex-wrap: wrap;
+             
+        }
+        
+        .Joanna{
+            top:21%;   
+            left:30%;
+        }  
+
+        .history{
+            
+            left:30%;
+            top: 40%;      
+         }  
+
+        .photoWomenFirst{
+            position: absolute;
+            top: 28%;
+            left: 32%;
+        } 
+        
+        .thirdPhoto{
+            width: 180px;
+            height: 250px;
+            border-radius:300px;
+            box-shadow:       
+            0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+        }
+       
+        .photoWomen{
+            position:absolute; 
+            top:1250px;
+            
+        }  
+        
+
+        .fourthPhoto{
+            width: 180px;
+            height: 220px;
+            /* width: 90%;
+            height: 25%; */
+            border-radius:200px;
+            box-shadow:0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+        }
+
+        .secondDiv{
+            width: 100%;
+            height: 110vh;
+            /* background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1517897286832-ba927d20e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJsYWNrJTIwYW5kJTIwZ3JlZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'); */
+            position: relative;
+            display:flex;
+         }
+
+         .produce{
+            font-size: 130px;
+            top:48%; 
+            left:10%;
+        }
+        
+        .photoShoots{
+            font-size: 110px;
+            top:58%;
+            left:22%;
+        }
+
+         .phoneFooter{
+            position: relative;
+            top:-35%;
+           
+        }
+        
+       
+        .seventeen{
+            position: absolute; 
+            left:18%;
+            bottom: 10%;
+            /* margin-left:200px;
+            bottom:-50px;  */
+        }
+        
+        .seventeen img{
+            width: 35%;
+        }
+        
+        .arrow{
+           top:18%;
+           left: 100px; 
+        }
+        
+        .arrow img{
+            width: 100%;
+        }
+        
+        .arrow2{
+            top:20.5%;
+            left: 100px; 
+           
+        }
+        
+        .arrow2 img{
+            width: 100%;
+            opacity: 0.4;
+        }
+        
+        .arrow3{
+            top:23%;
+            left: 100px; 
+            
+        }
+        
+        .arrow3 img{
+            width: 100%;
+            opacity: 0.2;
+        } 
+
+
+    }
+    @media (min-width: 400px) and  (max-height:740px){
+        
+        .firstDiv{
+            height: 220vh;
+        }
+        
+        .photoMen{
+            top:230px;
+            left:20%; 
+        }
+        .Joanna{
+            top:21%;   
+            left:30%;
+        }  
+
+        .history{
+            left:30%;
+            top: 39%;      
+         }  
+
+        .photoWomenFirst{
+            position: absolute;
+            top: 28%;
+            left: 32%;
+        } 
+        
+       
+        .photoWomen{
+            position:absolute; 
+            top:1270px;
+            
+        }  
+        
+        .secondDiv{
+            width: 100%;
+            height: 140vh;
+         }
+
+         .phoneFooter{
+            position: relative;
+            top:-45%;
+           
+        }
+    
+        .round{
+            position: absolute; 
+            bottom: 8%;
+            right: 5%;
+           
+        } 
+    }
+
+    @media (min-width: 576px)and (max-width: 768px) {
+        .header1{
+            display: none;
+         }
+      
+         .mainPage{
+             display: flex; 
+         }
+         
+         .mainPage{
+             display: flex; 
+             width:100%;
+             height: 95vh;
+             /* background-color: blueviolet; */
+             background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1536924430914-91f9e2041b83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80');
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-position: 50% 50%; 
+             background-attachment: fixed;
+         }
+ 
+         .About{
+             position: relative;
+         }
+         
+         .About p{
+             font-family: 'Permanent Marker', cursive;
+             position: absolute;
+             top: 170px;
+             left:120%;
+             text-align: center;
+             font-size: 90px;
+             font: bold;
+             line-height: 1.5;
+             color: rgba(44, 253, 7, 0.938);
+         }
+         
+         .About h1{
+             position: relative;
+             top:70%;
+             left:170%;
+             
+         }
+         
+         .button{
+             text-decoration: none;
+             border: none;
+             font-family: 'Indie Flower', cursive;
+             font-size: 35px;
+             font-weight:bold;
+             color: rgba(44, 253, 7, 0.938);
+         }
+         
+         .button:hover {
+             
+             color: white;
+           } 
+         
+           .Background{
+           background-repeat: no-repeat;
+           background-size: cover;
+           display: block;
+           max-width: 100%; 
+           position: relative;
+           box-sizing: content-box;
+           height: auto;
+       }
+       
+       .firstDiv{
+           
+           width: 100%;
+           height: 200vh;
+           background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1517897286832-ba927d20e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJsYWNrJTIwYW5kJTIwZ3JlZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'); 
+           display: block;
+            
+       }
+      
+      .photoMen{
+          position: absolute;
+           top:250px;
+           left:32%; 
+      }
+      
+       .BackgroundTekst{
+          font-family: 'Kolker Brush', cursive;
+          color: rgba(44, 253, 7, 0.938);
+          font-size: 120px;
+          font-weight: 500;
+          position:absolute; 
+          top:0%;
+          margin-left:30%;    
+      }
+      
+      .BackgroundTekst2{
+          font-family: 'Kolker Brush', cursive;
+          color: rgba(44, 253, 7, 0.938);
+          font-size: 120px;
+          font-weight: 500;
+          position:absolute; 
+          top:2%;
+          left: 50%;
+         
+          
+      }
+      
+       .secondPhoto{
+          
+          /* margin-left: 15%; */
+          width: 55%;
+          height: 80%;
+          border-radius:150px;
+          box-shadow: 0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+      } 
+       
+       .photoWomenFirst{
+          
+          position: absolute;
+          top: 28%;
+          left:35%; 
+      } 
+      
+      .thirdPhoto{
+          
+          width: 55%;
+          height: 30%;
+          border-radius:300px;
+          box-shadow:       
+          0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+      }
+      
+       .photoWomen{
+          position:absolute; 
+          top:50%;
+          /* right:17%; */
+          left:34%;
+      }  
+      
+      .fourthPhoto{
+          
+          width: 55%;
+          height: 30%;
+          border-radius:200px;
+          box-shadow:0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+      }
+      
+      .Joanna{
+          font-family: 'Red Hat Mono', monospace;
+          color: rgba(44, 253, 7, 0.938);
+          font-size: 12px;
+          font-weight: 500;
+          text-align: center;
+          position:absolute; 
+          left:32%;
+          top:21%;  
+          
+      }  
+      
+      .history{
+          font-family: 'Red Hat Mono', monospace;
+          color: rgba(44, 253, 7, 0.938);
+          font-size: 12px;
+          font-weight: 500;
+          position:absolute; 
+          /* margin-right: 200px;  */
+          text-align: center; 
+          left:32%;
+          top: 41%;
+          white-space: nowrap;
+          /* top: 850px; */
+          
+      } 
+
+      .secondDiv{
+       /* background-color: blue;  */
+       width: 100%;
+       height: 120vh;
+       background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1517897286832-ba927d20e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJsYWNrJTIwYW5kJTIwZ3JlZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+       position: relative;
+       display:block;
+    }
+    
+    .What{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 35px;
+        font-weight: 500;
+        position: absolute;
+        top:5%;
+        left: 20%;  
+    }
+    
+    .do{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 35px;
+        font-weight: 500;
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 25px;
+        font-weight: 500;
+        position: absolute;
+        top:10%;
+        left: 35%;  
+        white-space: nowrap;
+    } 
+    
+    .shakeimage{
+        position:relative
+    }
+    
+    .mainPhotoSecondDiv{
+        position:absolute; 
+        top:32%;
+        left: 30%;
+        /* text-align: center; */
+    }
+    
+    .photoSecondDiv{
+        /* position: relative; */
+        width: 65%;
+        height: 70%;
+        border-radius:300px;
+        box-shadow:0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+    }
+    
+    .shoot{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 13px;
+        font-weight: 500;
+        position:absolute;
+        top:19%;
+        /* left:50%; */
+        right: 25%;
+        white-space: nowrap;
+    }
+    
+    .produce{
+        font-family: 'Kolker Brush', cursive;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 150px;
+        white-space: nowrap;
+        font-weight: 500;
+        position:absolute; 
+        top:52%; 
+        left:10%;
+        /* left:200px;
+        top:550px; */
+    }
+    
+    .photoShoots{
+        font-family: 'Kolker Brush', cursive;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 150px;
+        font-weight: 500;
+        position:absolute;  
+        /* text-align:center; */
+        top:62%;
+        left:25%;
+        /* top:-70px; */
+    }
+    
+    .since{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 10px;
+        font-weight: 500;
+        position:absolute; 
+        bottom:2%;
+        left:15%;
+        white-space: nowrap;
+        
+    }
+    
+    .seventeen{
+        position: absolute; 
+        left:17%;
+        bottom: 7%;
+        /* margin-left:200px;
+        bottom:-50px;  */
+    }
+    
+    .seventeen img{
+        /* position: relative; */
+        width: 35%;
+    }
+    
+     .arrow{
+       position:absolute;
+       top:205px;
+       left: 160px; 
+    }
+    
+    .arrow img{
+        /* position: relative; */
+        width: 100%;
+    }
+    
+    .arrow2{
+        position: absolute;
+        top:235px;
+        left: 160px; 
+       
+    }
+    
+    .arrow2 img{
+        /* position: relative; */
+        width: 100%;
+        opacity: 0.4;
+    }
+    
+    .arrow3{
+        position: absolute;
+        top:260px;
+        left: 160px; 
+        
+    }
+    
+    .arrow3 img{
+        /* position: relative; */
+        width: 100%;
+        opacity: 0.2;
+    } 
+    
+     .round{
+        position: absolute; 
+        bottom: 5%;
+        right: 6%;
+        
+    } 
+    
+    .round img{
+        position: relative;
+        width: 45%;
+    }
+    
+    footer{
+       background-color: black;
+       /* background-color: darkcyan; */
+       width: 100%;
+       height: 18vh; 
+       position: relative;
+       /* margin:50px; */
+       display: block;
+       
+       }
+       
+       footer p{
+           text-align: center;
+           padding: 15px;
+           
+       }
+       
+       
+       .faceLink{
+           position: absolute;
+           left: 30%; 
+           top:45%;
+       }
+
+       .facebookFooter{
+          
+           width: 100%;
+           text-align: center;
+       }
+       
+       .instagramLink{
+           position: absolute;
+           left: 45%;
+           top:45%;
+       }
+       
+       .instagramFooter{
+           width: 100%;
+       }
+       
+       .telegramLink{
+           position: absolute;
+           left: 60%;
+           top:45%;
+       }
+
+       .telegramFooter{
+           width: 100%;
+       }
+       
+       .JoanaFooter{
+           text-align: left;
+           font-family: 'Red Hat Mono', monospace;
+           color: rgba(44, 253, 7, 0.938);
+           font-size: 15px;
+           font-weight: bold;
+           font-weight: 500;
+           position: absolute; 
+           top: 40px;
+           right: 50px;
+           white-space: nowrap;
+       }
+       
+       
+       
+       .phoneFooter{
+           text-align: right;
+           font-family: 'Red Hat Mono', monospace;
+           color: rgba(44, 253, 7, 0.938);
+           font-size: 12px;
+           font-weight: bold;
+           font-weight: 500;
+           position: absolute; 
+           top: 42px;
+           left: 50px;
+           white-space: nowrap;
+       }
+                
+    }
+
+     @media (min-width: 576px)and (max-width: 768px) and (min-height:360px) and (max-height:600px) {
+       
+         .About p{
+             top: 90px;
+             left:100%;
+             font-size: 50px;
+             white-space: nowrap;
+         }
+         
+         .About h1{
+             top:65%;
+             left:190%;
+         }
+       
+       .firstDiv{
+           width: 100%;
+           height: 500vh;
+       }
+      
+      .photoMen{
+           position: absolute;
+           top:250px;
+           left:35%; 
+      }
+      
+       .BackgroundTekst{
+          font-size: 150px; 
+          top:0%;
+      }
+      
+      .BackgroundTekst2{
+          font-size: 150px;
+          top:2%;
+          left: 50%;
+      }
+      
+       .secondPhoto{
+          width: 50%;
+          height: 70%;
+          border-radius:150px;
+      } 
+       
+       .photoWomenFirst{
+          position: absolute;
+          top: 28%;
+          left:35%; 
+      } 
+      
+      .thirdPhoto{
+          width: 50%;
+          height: 30%;
+          border-radius:300px;
+      }
+      
+       .photoWomen{
+          top:50%;
+          left:34%;
+      }  
+      
+      .fourthPhoto{
+          width: 50%;
+          height: 30%;
+      }
+      
+      .Joanna{
+          font-size: 12px;
+          left:34%;
+          top:21%; 
+      }  
+      
+      .history{
+          font-size: 12px;
+          left:34%;
+          top: 41%;
+          white-space: nowrap;
+      } 
+
+      .secondDiv{
+       width: 100%;
+       height: 300vh;
+    }
+    
+     .arrow{
+       top:205px;
+       left: 190px; 
+    }
+    
+    .arrow2{
+        top:235px;
+        left: 190px; 
+    }
+    
+    .arrow3{
+        top:260px;
+        left: 190px; 
+    }
+    
+    
+    footer{
+       background-color: black;
+       /* background-color: darkcyan; */
+       width: 100%;
+       height: 40vh; 
+       position: relative;
+       /* margin:50px; */
+       display: block;
+       
+       }
+       
+       footer p{
+           text-align: center;
+           padding: 15px;
+           
+       }
+       
+       
+       .faceLink{
+           position: absolute;
+           left: 30%; 
+           top:45%;
+       }
+
+       .facebookFooter{
+          
+           width: 100%;
+           text-align: center;
+       }
+       
+       .instagramLink{
+           position: absolute;
+           left: 45%;
+           top:45%;
+       }
+       
+       .instagramFooter{
+           width: 100%;
+       }
+       
+       .telegramLink{
+           position: absolute;
+           left: 60%;
+           top:45%;
+       }
+
+       .telegramFooter{
+           width: 100%;
+       }
+       
+       .JoanaFooter{
+           text-align: left;
+           font-family: 'Red Hat Mono', monospace;
+           color: rgba(44, 253, 7, 0.938);
+           font-size: 15px;
+           font-weight: bold;
+           font-weight: 500;
+           position: absolute; 
+           top: 40px;
+           right: 50px;
+           white-space: nowrap;
+       }
+       
+       
+       
+       .phoneFooter{
+           text-align: right;
+           font-family: 'Red Hat Mono', monospace;
+           color: rgba(44, 253, 7, 0.938);
+           font-size: 12px;
+           font-weight: bold;
+           font-weight: 500;
+           position: absolute; 
+           top: 42px;
+           left: 50px;
+           white-space: nowrap;
+       }
+                
+    } 
+    
+    @media (min-width: 800px)and (max-width: 920px)  and (max-height:415px) {
+        .header1{
+            display: none;
+         }
+      
+         .mainPage{
+             display: flex; 
+         }
+         
+         .mainPage{
+             display: flex; 
+             width:100%;
+             height: 90vh;
+             background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1536924430914-91f9e2041b83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80');
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-position: 50% 50%; 
+             background-attachment: fixed;
+         }
+ 
+         .About{
+             position: relative;
+         }
+         
+         .About p{
+             font-family: 'Permanent Marker', cursive;
+             position: absolute;
+             top: 90px;
+             white-space: nowrap;
+             left:120%;
+             text-align: center;
+             font-size: 60px;
+             font: bold;
+             line-height: 1.5;
+             color: rgba(44, 253, 7, 0.938);
+         }
+         
+         .About h1{
+             position: relative;
+             top:70%;
+             left:250%;
+             
+         }
+         
+         .button{
+             text-decoration: none;
+             border: none;
+             font-family: 'Indie Flower', cursive;
+             font-size: 35px;
+             font-weight:bold;
+             color: rgba(44, 253, 7, 0.938);
+         }
+         
+         .button:hover {
+             
+             color: white;
+           } 
+         
+           .Background{
+           background-repeat: no-repeat;
+           background-size: cover;
+           display: block;
+           max-width: 100%; 
+           position: relative;
+           box-sizing: content-box;
+           height: auto;
+       }
+       
+       .firstDiv{
+           
+           width: 100%;
+           height: 550vh;
+           background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1517897286832-ba927d20e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJsYWNrJTIwYW5kJTIwZ3JlZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'); 
+           display: block;
+            
+       }
+      
+      .photoMen{
+          position: absolute;
+           top:300px;
+           left:38%; 
+      }
+      
+       .BackgroundTekst{
+          font-family: 'Kolker Brush', cursive;
+          color: rgba(44, 253, 7, 0.938);
+          font-size: 150px;
+          font-weight: 500;
+          position:absolute; 
+          top:0%;
+          margin-left:32%;    
+      }
+      
+      .BackgroundTekst2{
+          font-family: 'Kolker Brush', cursive;
+          color: rgba(44, 253, 7, 0.938);
+          font-size: 150px;
+          font-weight: 500;
+          position:absolute; 
+          top:3%;
+          left: 50%;
+         
+          
+      }
+      
+       .secondPhoto{
+          
+          /* margin-left: 15%; */
+          width: 45%;
+          height: 70%;
+          border-radius:150px;
+          box-shadow: 0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+      } 
+       
+       .photoWomenFirst{
+          position: absolute;
+          top: 30%;
+          left:38%; 
+      } 
+      
+      .thirdPhoto{
+          
+          width: 50%;
+          height: 30%;
+          border-radius:300px;
+          box-shadow:       
+          0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+      }
+      
+       .photoWomen{
+          position:absolute; 
+          top:55%;
+          /* right:17%; */
+          left:38%;
+      }  
+      
+      .fourthPhoto{
+          
+          width: 45%;
+          height: 40%;
+          border-radius:200px;
+          box-shadow:0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+      }
+      
+      .Joanna{
+          font-family: 'Red Hat Mono', monospace;
+          color: rgba(44, 253, 7, 0.938);
+          font-size: 15px;
+          font-weight: 500;
+          text-align: center;
+          position:absolute; 
+          left:33%;
+          top:22%;  
+          white-space: nowrap;
+      }  
+      
+      .history{
+          font-family: 'Red Hat Mono', monospace;
+          color: rgba(44, 253, 7, 0.938);
+          font-size: 15px;
+          font-weight: 500;
+          position:absolute; 
+          text-align: center; 
+          left:34%;
+          top: 44%;
+          white-space: nowrap;
+      } 
+
+      .secondDiv{
+       /* background-color: blue;  */
+       width: 100%;
+       height: 280vh;
+       background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1517897286832-ba927d20e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJsYWNrJTIwYW5kJTIwZ3JlZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+       position: relative;
+       display:block;
+    }
+    
+    .What{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 35px;
+        font-weight: 500;
+        position: absolute;
+        top:5%;
+        left: 25%;  
+    }
+    
+    .do{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 35px;
+        font-weight: 500;
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-weight: 500;
+        position: absolute;
+        top:10%;
+        left: 40%;  
+        white-space: nowrap;
+    } 
+    
+    .shakeimage{
+        position:relative
+    }
+    
+    .mainPhotoSecondDiv{
+        position:absolute; 
+        top:35%;
+        left: 33%;
+        /* text-align: center; */
+    }
+    
+    .photoSecondDiv{
+        /* position: relative; */
+        width: 60%;
+        height: 70%;
+        border-radius:300px;
+        box-shadow:0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+    }
+    
+    .shoot{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 13px;
+        font-weight: 500;
+        position:absolute;
+        top:20%;
+        /* left:50%; */
+        right: 25%;
+        white-space: nowrap;
+    }
+    
+    .produce{
+        font-family: 'Kolker Brush', cursive;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 150px;
+        white-space: nowrap;
+        font-weight: 500;
+        position:absolute; 
+        top:52%; 
+        left:10%;
+        /* left:200px;
+        top:550px; */
+    }
+    
+    .photoShoots{
+        font-family: 'Kolker Brush', cursive;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 150px;
+        font-weight: 500;
+        position:absolute;  
+        /* text-align:center; */
+        top:62%;
+        left:25%;
+        /* top:-70px; */
+    }
+    
+    .since{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 10px;
+        font-weight: 500;
+        position:absolute; 
+        bottom:2%;
+        left:15%;
+        white-space: nowrap;
+        
+    }
+    
+    .seventeen{
+        position: absolute; 
+        left:17%;
+        bottom: 7%;
+        /* margin-left:200px;
+        bottom:-50px;  */
+    }
+    
+    .seventeen img{
+        /* position: relative; */
+        width: 35%;
+    }
+    
+     .arrow{
+       position:absolute;
+       top:205px;
+       left: 250px; 
+    }
+    
+    .arrow img{
+        /* position: relative; */
+        width: 100%;
+    }
+    
+    .arrow2{
+        position: absolute;
+        top:235px;
+        left: 250px; 
+       
+    }
+    
+    .arrow2 img{
+        /* position: relative; */
+        width: 100%;
+        opacity: 0.4;
+    }
+    
+    .arrow3{
+        position: absolute;
+        top:260px;
+        left: 250px; 
+        
+    }
+    
+    .arrow3 img{
+        /* position: relative; */
+        width: 100%;
+        opacity: 0.2;
+    } 
+    
+     .round{
+        position: absolute; 
+        bottom: 5%;
+        right: 6%;
+        
+    } 
+    
+    .round img{
+        position: relative;
+        width: 45%;
+    }
+    
+    footer{
+       background-color: black;
+       width: 100%;
+       height: 30vh; 
+       position: relative;
+       display: block;
+       }
+       
+       footer p{
+           text-align: center;
+           padding: 15px;
+           
+       }
+       
+       
+       .faceLink{
+           position: absolute;
+           left: 30%; 
+           top:45%;
+       }
+
+       .facebookFooter{
+          
+           width: 100%;
+           text-align: center;
+       }
+       
+       .instagramLink{
+           position: absolute;
+           left: 45%;
+           top:45%;
+       }
+       
+       .instagramFooter{
+           width: 100%;
+       }
+       
+       .telegramLink{
+           position: absolute;
+           left: 60%;
+           top:45%;
+       }
+
+       .telegramFooter{
+           width: 100%;
+       }
+       
+       .JoanaFooter{
+           text-align: left;
+           font-family: 'Red Hat Mono', monospace;
+           color: rgba(44, 253, 7, 0.938);
+           font-size: 15px;
+           font-weight: bold;
+           font-weight: 500;
+           position: absolute; 
+           top: 40px;
+           right: 50px;
+           white-space: nowrap;
+       }
+       
+       
+       
+       .phoneFooter{
+           text-align: right;
+           font-family: 'Red Hat Mono', monospace;
+           color: rgba(44, 253, 7, 0.938);
+           font-size: 12px;
+           font-weight: bold;
+           font-weight: 500;
+           position: absolute; 
+           top: 42px;
+           left: 50px;
+           white-space: nowrap;
+       }
+                
+    }
+
+    @media (min-width: 768px)and (max-width: 992px) and (min-height:1000px){
+         
+         .About p{
+             top: 170px;
+             left:150%;
+             font-size: 120px;
+         }
+         
+         .About h1{
+             position: relative;
+             top:80%;
+             left:230%; 
+         }
+
+        .firstDiv{
+            height: 205vh;
+        }
+        
+      .photoMen{
+          position: absolute;
+           top:250px;
+           left:32%; 
+      }
+      
+       .BackgroundTekst{
+          font-size: 160px;
+          top:0%;
+          left: 0%;  
+      }
+      
+      .BackgroundTekst2{
+          font-size: 160px;
+          top:2%;
+          left: 50%;
+       }
+      
+       .photoWomenFirst{
+          
+          position: absolute;
+          top: 28%;
+          left:34%; 
+      } 
+      
+       .photoWomen{
+          position:absolute; 
+          top:52%;
+          left:34%;
+      }  
+      
+      .Joanna{
+          font-size: 15px;
+          left:31%;
+          top:21%;  
+      }  
+      
+      .history{
+          font-size: 15px;
+          /* left:32%; */
+          left: calc((100% / 2) - 17%);
+          top: 42%;
+          white-space: nowrap;
+      } 
+
+      
+    
+    .What{
+        font-size: 40px;
+        top:5%;
+        left: 25%;  
+    }
+    
+    .do{
+        font-size: 37px;
+        top:10%;
+        left: 40%;  
+        white-space: nowrap;
+    } 
+    
+    .shakeimage{
+        position:relative
+    }
+    
+   
+    .shoot{
+        font-size: 15px;
+        top:19%;
+        right: 25%;
+        white-space: nowrap;
+    }
+    
+    .since{
+        font-size: 15px;
+        bottom:2%;
+        left:13%;
+        white-space: nowrap; 
+    }
+    
+    .seventeen{
+        position: absolute; 
+        left:16%;
+        bottom: 10%;
+       
+    }
+    
+    .seventeen img{
+        /* position: relative; */
+        width: 45%;
+    }
+    
+     .arrow{
+       position:absolute;
+       top:215px;
+       left: 230px; 
+    }
+    
+    .arrow img{
+        /* position: relative; */
+        width: 120%;
+    }
+    
+    .arrow2{
+        position: absolute;
+        top:245px;
+        left: 230px; 
+       
+    }
+    
+    .arrow2 img{
+        /* position: relative; */
+        width: 120%;
+        opacity: 0.4;
+    }
+    
+    .arrow3{
+        position: absolute;
+        top:270px;
+        left: 230px; 
+        
+    }
+    
+    .arrow3 img{
+        /* position: relative; */
+        width: 120%;
+        opacity: 0.2;
+    } 
+    
+     .round{
+        position: absolute; 
+        bottom: 5%;
+        right: 6%;
+        
+    } 
+    
+    .round img{
+        position: relative;
+        width: 45%;
+    }
+    
+    footer{
+       background-color: black;
+       /* background-color: darkcyan; */
+       width: 100%;
+       height: 18vh; 
+       position: relative;
+       /* margin:50px; */
+       display: block;
+       
+       }
+       
+       footer p{
+           text-align: center;
+           padding: 15px;
+           
+       }
+       
+       
+       .faceLink{
+           position: absolute;
+           left: 30%; 
+           top:45%;
+       }
+
+       .facebookFooter{
+          
+           width: 100%;
+           text-align: center;
+       }
+       
+       .instagramLink{
+           position: absolute;
+           left: 45%;
+           top:45%;
+       }
+       
+       .instagramFooter{
+           width: 100%;
+       }
+       
+       .telegramLink{
+           position: absolute;
+           left: 60%;
+           top:45%;
+       }
+
+       .telegramFooter{
+           width: 100%;
+       }
+       
+       .JoanaFooter{
+           text-align: left;
+           font-family: 'Red Hat Mono', monospace;
+           color: rgba(44, 253, 7, 0.938);
+           font-size: 15px;
+           font-weight: bold;
+           font-weight: 500;
+           position: absolute; 
+           top: 40px;
+           right: 50px;
+           white-space: nowrap;
+       }
+       
+       
+       
+       .phoneFooter{
+           text-align: right;
+           font-family: 'Red Hat Mono', monospace;
+           color: rgba(44, 253, 7, 0.938);
+           font-size: 12px;
+           font-weight: bold;
+           font-weight: 500;
+           position: absolute; 
+           top: 42px;
+           left: 50px;
+           white-space: nowrap;
+       }
+                
+    }
+
+    @media (min-width:897px) and (max-width: 1199px) and (min-height: 600px) and (max-height:800px){
+        header{
+            background-color: black;
+            width: 100%;
+        } 
+        .header1{
+            height: auto;
+            margin: 25px;
+            margin-left:2%;
+        }
+        
+        .headerContacts{
+           font-size: 20px;
+           padding: 10px;
+        }
+        
+        .headerphone{
+            white-space: nowrap;
+            font-size: 20px;
+           margin-left: 40%;
+        }
+        
+
+        .mainPage{
+         display: flex; 
+        }
+
+        .mainPhoto{
+        width: 50%;
+        height:90vh;
+        background-image:url('https://images.unsplash.com/photo-1536924430914-91f9e2041b83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80');
+        background-position: 50% 50%;
+        background-attachment: fixed;
+        } 
+
+        .About{
+        position: relative;
+        margin-left: 0px;
+        }
+
+        .About p{
+        font-family: 'Permanent Marker', cursive;
+        position: absolute;
+        top: 100px;
+        left:150px;
+        text-align: center;
+        font-size: 80px;
+        font: bold;
+        line-height: 1.5;
+        color: rgba(44, 253, 7, 0.938);
+        }
+
+        .About h1{
+            transform: rotate(90deg);
+           position: absolute;
+           white-space: nowrap;
+            top: 35%;
+        }
+
+        .button{
+            text-decoration: none;
+            border: none;
+            font-family: 'Indie Flower', cursive;
+            font-size: 35px;
+            font-weight:bold;
+            color: rgba(44, 253, 7, 0.938);
+        }
+
+        .button:hover {
+            
+            color: white;
+        } 
+
+        .Background{
+            /* background-color: red;     */
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: block; 
+            max-width: 100%; 
+            position: relative;
+            box-sizing: content-box;
+            height: auto;
+        } 
+
+        .firstDiv{
+           
+            background-color:darkcyan;  
+            width: 100%;
+            height: 120vh;
+            background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1517897286832-ba927d20e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJsYWNrJTIwYW5kJTIwZ3JlZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'); 
+            display: block;
+            
+        }
+
+        .photoMen{
+            position: absolute;
+            top:150px;
+            left:10% ;
+        }
+
+        .BackgroundTekst{
+            font-family: 'Kolker Brush', cursive;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 150px;
+            font-weight: 500;
+            position:absolute; 
+            top:15%;
+            left: 10%;
+           
+        }
+
+        .BackgroundTekst2{
+            font-family: 'Kolker Brush', cursive;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 150px;
+            font-weight: 500;
+            position: absolute;
+            top:18%;
+            left: 28%;   
+        }
+
+        .secondPhoto{
+            width: 35%;
+            height: 50%;
+            border-radius:100px;
+            box-shadow: 0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+        } 
+
+        .photoWomenFirst{
+            position: absolute;
+            top: 17%;
+            left: 40%;
+        } 
+
+        .thirdPhoto{
+            
+            width: 50%;
+            height: 45%;
+            border-radius:300px;
+            box-shadow:       
+            0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+        }
+
+        .photoWomen{
+            position:absolute; 
+            top: 7%;
+            left: 72%;
+           
+        } 
+
+        .fourthPhoto{
+            width: 70%;
+            height: 80%;
+            border-radius:200px;
+            box-shadow:0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+        }
+
+        .Joanna{
+            font-family: 'Red Hat Mono', monospace;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 15px;
+            font-weight: 500;
+            position:absolute; 
+            left:10%;
+            top:28%;  
+            
+        }  
+
+        .history{
+            font-family: 'Red Hat Mono', monospace;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 15px;
+            font-weight: 500;
+            position:absolute; 
+            right:6%;
+            top:24%;  
+            text-align: right;
+            
+        }  
+
+        .secondDiv{
+        /* background-color: blue;  */
+        width: 100%;
+        height: 150vh;
+        background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1517897286832-ba927d20e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJsYWNrJTIwYW5kJTIwZ3JlZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+        position: relative;
+        display: block;
+        }
+
+        .What{
+            font-family: 'Red Hat Mono', monospace;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 25px;
+            font-weight: 500;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+        } 
+
+        .do{
+            font-family: 'Red Hat Mono', monospace;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 25px;
+            font-weight: 500;
+            font-family: 'Red Hat Mono', monospace;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 25px;
+            font-weight: 500;
+            position:absolute; 
+            top: 17%;
+            left: 15%;
+        }  
+
+        .shakeimage{
+            position:relative
+        }
+
+        .mainPhotoSecondDiv{
+            position:absolute; 
+            top: 20%;
+            left: 25%; 
+            text-align: center;
+        }
+
+        .photoSecondDiv{
+            width: 70%;
+            height: 95%;
+            border-radius:300px;
+            box-shadow:0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+        }
+
+        .shoot{
+            font-family: 'Red Hat Mono', monospace;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 15px;
+            font-weight: 500;
+            position:absolute;
+            right: 8%;
+            top:15%; 
+        }
+
+        .produce{
+            font-family: 'Kolker Brush', cursive;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 200px;
+            font-weight: 500;
+            position:absolute;  
+            left:15%;
+            top:50%;
+        }
+
+        .photoShoots{
+            font-family: 'Kolker Brush', cursive;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 200px;
+            font-weight: 500;
+            text-align:center;
+            position:absolute;  
+            left:25%;
+            top:65%;
+        }
+
+        .since{
+            font-family: 'Red Hat Mono', monospace;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 12px;
+            font-weight: 500;
+            position:absolute; 
+            bottom: 40px;
+            left: 100px;
+        }
+
+        .seventeen{
+            position: absolute; 
+            bottom: 100px;
+            left: 120px;
+        }
+
+        .seventeen img{
+            position: relative;
+            width:40%;
+        }
+
+
+
+        .arrow{
+            position:absolute;
+            text-align: right;
+            top: 200px;
+            right: 300px;
+        
+        }
+
+        .arrow img{
+           
+            width: 4%;
+        }
+
+        .arrow2{
+            position:absolute;
+            text-align: right;
+            top: 230px;
+            right: 300px;
+        
+        }
+
+        .arrow2 img{
+           
+            width:4%;
+            opacity: 0.4;
+        }
+
+        .arrow3{
+            position:absolute;
+            text-align: right;
+            top: 260px;
+            right: 300px;
+            
+        }
+
+        .arrow3 img{
+            
+            width: 4%;
+            opacity: 0.2;
+        }
+
+        .round{
+            position: absolute; 
+            text-align: right;
+            bottom:80px;
+            right: 100px;
+            
+        } 
+
+        .round img{
+            position: relative;
+            width: 60%;
+        }
+
+        footer{
+            background-color: black;
+            /* background-color: darkcyan; */
+            width: 100%;
+            height: 18vh; 
+            position: relative;
+            /* margin:50px; */
+            display: block;
+            
+            }
+            
+            footer p{
+                text-align: center;
+                padding: 15px;
+                
+            }
+            
+            
+            .faceLink{
+                position: absolute;
+                left: 32%; 
+                top:45%;
+            }
+     
+            .facebookFooter{
+               
+                width: 120%;
+                text-align: center;
+            }
+            
+            .instagramLink{
+                position: absolute;
+                left: 48%;
+                top:45%;
+            }
+            
+            .instagramFooter{
+                width: 120%;
+            }
+            
+            .telegramLink{
+                position: absolute;
+                left: 65%;
+                top:45%;
+            }
+     
+            .telegramFooter{
+                width: 120%;
+            }
+            
+            .JoanaFooter{
+                text-align: left;
+                font-family: 'Red Hat Mono', monospace;
+                color: rgba(44, 253, 7, 0.938);
+                font-size: 20px;
+                font-weight: bold;
+                font-weight: 500;
+                position: absolute; 
+                top: 35px;
+                right: 50px;
+                white-space: nowrap;
+            }
+            
+            
+            
+            .phoneFooter{
+                text-align: right;
+                font-family: 'Red Hat Mono', monospace;
+                color: rgba(44, 253, 7, 0.938);
+                font-size: 15px;
+                font-weight: bold;
+                font-weight: 500;
+                position: absolute; 
+                top: 42px;
+                left: 50px;
+                white-space: nowrap;
+            }
+    }
+
+    @media (min-width: 800px)and (max-width: 1199px) and (min-height: 900px) and (max-height:1380px){
+         
+        .header1{
+            display: none;
+        }
+        
+        .mainPage{
+            display: flex; 
+            width:100%;
+            height: 95vh;
+            background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1536924430914-91f9e2041b83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%; 
+            background-attachment: fixed;
+        }
+    
+        .About{
+             /* background-color: brown;   */
+            position: relative;
+            
+        }
+        
+        .About p{
+            font-family: 'Permanent Marker', cursive;
+            position: absolute;
+            top: 20%;
+            left:250px; 
+            text-align: center;
+            font-size: 120px;
+            font: bold;
+            line-height: 1.5;
+            color: rgba(44, 253, 7, 0.938);
+            opacity: 0.7;
+            overflow: hidden;
+        }
+        
+        .About h1{
+            position: absolute;
+            opacity: 0.7;
+            font-size: 70px;
+            top: 80%; 
+            left:350px;
+            white-space: nowrap;
+        }
+    
+
+        .button{
+            text-decoration: none;
+            border: none;
+            font-family: 'Indie Flower', cursive;
+            font-size: 35px;
+            font-weight:bold;
+            color: rgba(44, 253, 7, 0.938);
+        }
+
+        .button:hover {
+            
+            color: white;
+        } 
+
+        .Background{
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: block;
+          max-width: 100%; 
+          position: relative;
+          box-sizing: content-box;
+          height: auto;
+      }
+      
+      .firstDiv{
+          width: 100%;
+          height: 210vh;
+          background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1517897286832-ba927d20e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJsYWNrJTIwYW5kJTIwZ3JlZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'); 
+          display: block;
+           
+      }
+      
+      .photoMen{
+          position: absolute;
+           top:350px;
+           left:37%; 
+      }
+      
+       .BackgroundTekst{
+          font-family: 'Kolker Brush', cursive;
+          color: rgba(44, 253, 7, 0.938);
+          font-size: 180px;
+          font-weight: 500;
+          position:absolute; 
+          top:0%;
+          margin-left:30%;    
+      }
+      
+      .BackgroundTekst2{
+          font-family: 'Kolker Brush', cursive;
+          color: rgba(44, 253, 7, 0.938);
+          font-size: 180px;
+          font-weight: 500;
+          position:absolute; 
+          top:2%;
+          left: 55%;
+      }
+      
+       .secondPhoto{
+          width: 50%;
+          height: 80%;
+          border-radius:150px;
+          box-shadow: 0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+      } 
+       
+       .photoWomenFirst{
+          position: absolute;
+          top: 28%;
+          left: 22%;
+          text-align: center;
+      } 
+      
+      .thirdPhoto{
+          width: 55%;
+          height: 60%;
+          border-radius:300px;
+          box-shadow:       
+          0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+      }
+      
+       .photoWomen{
+          position:absolute; 
+          top:51%;
+          left: 35%;
+      }  
+      
+      .fourthPhoto{
+          width: 55%;
+          height: 80%;
+          border-radius:200px;
+          box-shadow:0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+      }
+      
+      .Joanna{
+          font-family: 'Red Hat Mono', monospace;
+          color: rgba(44, 253, 7, 0.938);
+          font-size: 20px;
+          font-weight: 500;
+          text-align: center;
+          position:absolute; 
+          left:28%;
+          /* left: calc((100% / 2) - 90px); */
+          top:20%;  
+          
+      }  
+      
+      .history{
+          font-family: 'Red Hat Mono', monospace;
+          color: rgba(44, 253, 7, 0.938);
+          font-size: 20px;
+          font-weight: 500;
+          position:absolute; 
+          text-align: center; 
+          left:28%;
+          /* left: calc((100% / 2) - 90px); */
+          top: 40%;
+          white-space: nowrap;
+        } 
+
+        .secondDiv{
+        /* background-color: blue;  */
+        width: 100%;
+        height: 120vh;
+        background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1517897286832-ba927d20e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJsYWNrJTIwYW5kJTIwZ3JlZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+        position: relative;
+        display: block;
+        }
+
+        .What{
+            font-family: 'Red Hat Mono', monospace;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 35px;
+            font-weight: 500;
+            position: absolute;
+            top: 5%;
+            left: 25%;
+        } 
+
+        .do{
+            font-family: 'Red Hat Mono', monospace;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 35px;
+            font-weight: 500;
+            position:absolute; 
+            top: 10%;
+            left: 40%;
+        }  
+
+        .shakeimage{
+            position:relative
+        }
+
+        .mainPhotoSecondDiv{
+            position:absolute; 
+            top: 35%;
+            left: 25%; 
+            text-align: center;
+        }
+
+        .photoSecondDiv{
+            width: 80%;
+            height: 95%;
+            border-radius:300px;
+            box-shadow:0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+        }
+
+        .shoot{
+            font-family: 'Red Hat Mono', monospace;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 15px;
+            font-weight: 500;
+            position:absolute;
+            right: 20%;
+            top:19%; 
+        }
+
+        .produce{
+            font-family: 'Kolker Brush', cursive;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 200px;
+            font-weight: 500;
+            position:absolute;  
+            left:15%;
+            top:63%;
+        }
+
+        .photoShoots{
+            font-family: 'Kolker Brush', cursive;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 200px;
+            font-weight: 500;
+            text-align:center;
+            position:absolute;  
+            left:25%;
+            top:73%;
+        }
+
+        .since{
+            font-family: 'Red Hat Mono', monospace;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 12px;
+            font-weight: 500;
+            position:absolute; 
+            bottom: 40px;
+            left: 100px;
+        }
+
+        .seventeen{
+            position: absolute; 
+            bottom: 100px;
+            left: 120px;
+        }
+
+        .seventeen img{
+            position: relative;
+            width:40%;
+        }
+
+
+
+        .arrow{
+            position:absolute;
+            text-align: left;
+            top: 250px;
+            left:250px;
+        
+        }
+
+        .arrow img{
+            width: 150%;
+        }
+
+        .arrow2{
+            position:absolute;
+            text-align: left;
+            top: 290px;
+            left:250px;
+        }
+
+        .arrow2 img{
+           
+            width: 150%;
+            opacity: 0.4;
+        }
+
+        .arrow3{
+            position:absolute;
+            text-align: left;
+            top: 330px;
+            left:250px;
+            
+        }
+
+        .arrow3 img{
+            
+            width: 150%;
+            opacity: 0.2;
+        }
+
+        .round{
+            position: absolute; 
+            text-align: right;
+            bottom:80px;
+            right: 100px;
+            
+        } 
+
+        .round img{
+            position: relative;
+            width: 60%;
+        }
+
+        footer{
+            background-color: black;
+            /* background-color: darkcyan; */
+            width: 100%;
+            height: 18vh; 
+            position: relative;
+            /* margin:50px; */
+            display: block;
+            
+            }
+            
+            footer p{
+                text-align: center;
+                padding: 15px;
+                
+            }
+            
+            
+            .faceLink{
+                position: absolute;
+                left: 32%; 
+                top:45%;
+            }
+     
+            .facebookFooter{
+               
+                width: 120%;
+                text-align: center;
+            }
+            
+            .instagramLink{
+                position: absolute;
+                left: 48%;
+                top:45%;
+            }
+            
+            .instagramFooter{
+                width: 120%;
+            }
+            
+            .telegramLink{
+                position: absolute;
+                left: 65%;
+                top:45%;
+            }
+     
+            .telegramFooter{
+                width: 120%;
+            }
+            
+            .JoanaFooter{
+                text-align: left;
+                font-family: 'Red Hat Mono', monospace;
+                color: rgba(44, 253, 7, 0.938);
+                font-size: 20px;
+                font-weight: bold;
+                font-weight: 500;
+                position: absolute; 
+                top: 35px;
+                right: 50px;
+                white-space: nowrap;
+            }
+            
+            
+            
+            .phoneFooter{
+                text-align: right;
+                font-family: 'Red Hat Mono', monospace;
+                color: rgba(44, 253, 7, 0.938);
+                font-size: 15px;
+                font-weight: bold;
+                font-weight: 500;
+                position: absolute; 
+                top: 42px;
+                left: 50px;
+                white-space: nowrap;
+            }
+               
+   }
+
+   @media (min-width: 1024px)and (max-width: 1199px) and (min-height: 800px) and (max-height:1280px){
+         
+    .header1{
+        display: none;
+    }
+    
+    .mainPage{
+        display: flex; 
+        width:100%;
+        height: 95vh;
+        background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1536924430914-91f9e2041b83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%; 
+        background-attachment: fixed;
+    }
+
+    .About{
+         /* background-color: brown;   */
+        position: relative;
+        
+    }
+    
+    .About p{
+        font-family: 'Permanent Marker', cursive;
+        position: absolute;
+        top: 15%;
+        left:450px; 
+        text-align: center;
+        font-size: 120px;
+        font: bold;
+        line-height: 1.5;
+        color: rgba(44, 253, 7, 0.938);
+        opacity: 0.7;
+        overflow: hidden;
+    }
+    
+    .About h1{
+        position: absolute;
+        opacity: 0.7;
+        font-size: 70px;
+        top: 80%; 
+        left:570px;
+        white-space: nowrap;
+    }
+
+
+    .button{
+        text-decoration: none;
+        border: none;
+        font-family: 'Indie Flower', cursive;
+        font-size: 35px;
+        font-weight:bold;
+        color: rgba(44, 253, 7, 0.938);
+    }
+
+    .button:hover {
+        
+        color: white;
+    } 
+
+    .Background{
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+      max-width: 100%; 
+      position: relative;
+      box-sizing: content-box;
+      height: auto;
+  }
+  
+  .firstDiv{
+      width: 100%;
+      height: 320vh;
+      background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1517897286832-ba927d20e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJsYWNrJTIwYW5kJTIwZ3JlZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'); 
+      display: block;
+       
+  }
+  
+  .photoMen{
+      position: absolute;
+       top:350px;
+       left:39%; 
+  }
+  
+   .BackgroundTekst{
+      font-family: 'Kolker Brush', cursive;
+      color: rgba(44, 253, 7, 0.938);
+      font-size: 180px;
+      font-weight: 500;
+      position:absolute; 
+      top:0%;
+      margin-left:35%;    
+  }
+  
+  .BackgroundTekst2{
+      font-family: 'Kolker Brush', cursive;
+      color: rgba(44, 253, 7, 0.938);
+      font-size: 180px;
+      font-weight: 500;
+      position:absolute; 
+      top:3%;
+      left: 55%;
+  }
+  
+   .secondPhoto{
+      width: 55%;
+      height: 80%;
+      border-radius:150px;
+      box-shadow: 0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+  } 
+   
+   .photoWomenFirst{
+      position: absolute;
+      top: 30%;
+      left: 30%;
+      text-align: center;
+  } 
+  
+  .thirdPhoto{
+      width: 55%;
+      height: 60%;
+      border-radius:300px;
+      box-shadow:       
+      0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+  }
+  
+   .photoWomen{
+      position:absolute; 
+      top:55%;
+      left: 39%;
+  }  
+  
+  .fourthPhoto{
+      width: 55%;
+      height: 80%;
+      border-radius:200px;
+      box-shadow:0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+  }
+  
+  .Joanna{
+      font-family: 'Red Hat Mono', monospace;
+      color: rgba(44, 253, 7, 0.938);
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center;
+      position:absolute; 
+      left:34%;
+      /* left: calc((100% / 2) - 90px); */
+      top:22%;  
+      
+  }  
+  
+  .history{
+      font-family: 'Red Hat Mono', monospace;
+      color: rgba(44, 253, 7, 0.938);
+      font-size: 20px;
+      font-weight: 500;
+      position:absolute; 
+      text-align: center; 
+      left:34%;
+      /* left: calc((100% / 2) - 90px); */
+      top: 43%;
+      white-space: nowrap;
+    } 
+
+    .secondDiv{
+    /* background-color: blue;  */
+    width: 100%;
+    height: 160vh;
+    background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1517897286832-ba927d20e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJsYWNrJTIwYW5kJTIwZ3JlZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+    position: relative;
+    display: block;
+    }
+
+    .What{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 35px;
+        font-weight: 500;
+        position: absolute;
+        top: 5%;
+        left: 25%;
+    } 
+
+    .do{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 35px;
+        font-weight: 500;
+        position:absolute; 
+        top: 10%;
+        left: 40%;
+    }  
+
+    .shakeimage{
+        position:relative
+    }
+
+    .mainPhotoSecondDiv{
+        position:absolute; 
+        top: 35%;
+        left: 30%; 
+        text-align: center;
+    }
+
+    .photoSecondDiv{
+        width: 80%;
+        height: 95%;
+        border-radius:300px;
+        box-shadow:0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+    }
+
+    .shoot{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 18px;
+        font-weight: 500;
+        position:absolute;
+        right: 25%;
+        top:20%; 
+    }
+
+    .produce{
+        font-family: 'Kolker Brush', cursive;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 200px;
+        font-weight: 500;
+        position:absolute;  
+        left:15%;
+        top:63%;
+    }
+
+    .photoShoots{
+        font-family: 'Kolker Brush', cursive;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 200px;
+        font-weight: 500;
+        text-align:center;
+        position:absolute;  
+        left:25%;
+        top:73%;
+    }
+
+    .since{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 12px;
+        font-weight: 500;
+        position:absolute; 
+        bottom: 40px;
+        left: 100px;
+    }
+
+    .seventeen{
+        position: absolute; 
+        bottom: 100px;
+        left: 120px;
+    }
+
+    .seventeen img{
+        position: relative;
+        width:40%;
+    }
+
+
+
+    .arrow{
+        position:absolute;
+        text-align: left;
+        top: 250px;
+        left:350px;
+    
+    }
+
+    .arrow img{
+        width: 150%;
+    }
+
+    .arrow2{
+        position:absolute;
+        text-align: left;
+        top: 290px;
+        left:350px;
+    }
+
+    .arrow2 img{
+       
+        width: 150%;
+        opacity: 0.4;
+    }
+
+    .arrow3{
+        position:absolute;
+        text-align: left;
+        top: 330px;
+        left:350px;
+        
+    }
+
+    .arrow3 img{
+        
+        width: 150%;
+        opacity: 0.2;
+    }
+
+    .round{
+        position: absolute; 
+        text-align: right;
+        bottom:80px;
+        right: 100px;
+        
+    } 
+
+    .round img{
+        position: relative;
+        width: 60%;
+    }
+
+    footer{
+        background-color: black;
+        /* background-color: darkcyan; */
+        width: 100%;
+        height: 18vh; 
+        position: relative;
+        /* margin:50px; */
+        display: block;
+        
+        }
+        
+        footer p{
+            text-align: center;
+            padding: 15px;
+            
+        }
+        
+        
+        .faceLink{
+            position: absolute;
+            left: 32%; 
+            top:45%;
+        }
+ 
+        .facebookFooter{
+           
+            width: 120%;
+            text-align: center;
+        }
+        
+        .instagramLink{
+            position: absolute;
+            left: 48%;
+            top:45%;
+        }
+        
+        .instagramFooter{
+            width: 120%;
+        }
+        
+        .telegramLink{
+            position: absolute;
+            left: 65%;
+            top:45%;
+        }
+ 
+        .telegramFooter{
+            width: 120%;
+        }
+        
+        .JoanaFooter{
+            text-align: left;
+            font-family: 'Red Hat Mono', monospace;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 20px;
+            font-weight: bold;
+            font-weight: 500;
+            position: absolute; 
+            top: 35px;
+            right: 50px;
+            white-space: nowrap;
+        }
+        
+        
+        
+        .phoneFooter{
+            text-align: right;
+            font-family: 'Red Hat Mono', monospace;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 15px;
+            font-weight: bold;
+            font-weight: 500;
+            position: absolute; 
+            top: 42px;
+            left: 50px;
+            white-space: nowrap;
+        }
+           
+}
+
+   @media (min-width: 1200px) and (min-height: 650px) {
+    .header1{
+        height: auto;
+        margin: 25px;
+        margin-left:2%;
+    }
+    
+    .headerContacts{
+       font-size: 20px;
+       padding: 10px;
+    }
+    
+    .headerphone{
+        white-space: nowrap;
+        font-size: 20px;
+       margin-left: 58%;
+    }
+    
+
+    
+    .mainPage{
+        display: flex; 
+    }
+    
+     .mainPhoto{
+        width: 50%;
+        height:100vh;
+        background-image:url('https://images.unsplash.com/photo-1536924430914-91f9e2041b83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80');
+        background-position: 50% 50%;
+        background-attachment: fixed;
+        
+    } 
+
+    .About{
+         /* background-color: brown;   */
+        position: relative;
+        
+    }
+    
+    .About p{
+        font-family: 'Permanent Marker', cursive;
+        position: absolute;
+        top: 10%;
+        left:250px; 
+        text-align: center;
+        font-size: 110px;
+        font: bold;
+        line-height: 1.5;
+        color: rgba(44, 253, 7, 0.938);
+        opacity: 1;
+        overflow: hidden;
+    }
+    
+    .About h1{
+        transform: rotate(90deg);
+        position: absolute;
+        opacity:1;
+        font-size: 70px;
+        top: 38%; 
+        /* left:350px; */
+        white-space: nowrap;
+    }
+
+    
+    .button{
+        text-decoration: none;
+        border: none;
+        font-family: 'Indie Flower', cursive;
+        font-size: 35px;
+        font-weight:bold;
+        color: rgba(44, 253, 7, 0.938);
+    }
+    
+    .button:hover {
+        
+        color: white;
+      }
+    
+    .Background{
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block; 
+        max-width: 100%; 
+        position: relative;
+        box-sizing: content-box;
+        height: auto;
+    }
+    .firstDiv{
+           
+        background-color:darkcyan;  
+        width: 100%;
+        height: 120vh;
+        background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1517897286832-ba927d20e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJsYWNrJTIwYW5kJTIwZ3JlZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'); 
+        display: block;
+        
+    }
+
+    .photoMen{
+        position: absolute;
+        top:150px;
+        left:10% ;
+    }
+
+    .BackgroundTekst{
+        font-family: 'Kolker Brush', cursive;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 200px;
+        font-weight: 500;
+        position:absolute; 
+        top:14%;
+        left: 10%;
+       
+    }
+
+    .BackgroundTekst2{
+        font-family: 'Kolker Brush', cursive;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 200px;
+        font-weight: 500;
+        position: absolute;
+        top:18%;
+        left: 28%;   
+    }
+
+    .secondPhoto{
+        width: 40%;
+        height: 60%;
+        border-radius:120px;
+        box-shadow: 0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+    } 
+
+    .photoWomenFirst{
+        position: absolute;
+        top: 18%;
+        left: 40%;
+    } 
+
+    .thirdPhoto{
+        
+        width: 60%;
+        height: 60%;
+        border-radius:300px;
+        box-shadow:       
+        0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+    }
+
+    .photoWomen{
+        position:absolute; 
+        top: 9%;
+        left: 75%;
+       
+    } 
+
+    .fourthPhoto{
+        width: 55%;
+        height: 80%;
+        border-radius:200px;
+        box-shadow:0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+    }
+
+    .Joanna{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 15px;
+        font-weight: 500;
+        position:absolute; 
+        left:12%;
+        top:28%;  
+        
+    }  
+
+    .history{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 15px;
+        font-weight: 500;
+        position:absolute; 
+        right:13%;
+        top:24%;  
+        text-align: right;
+        
+    }  
+
+    .secondDiv{
+    /* background-color: blue;  */
+    width: 100%;
+    height: 150vh;
+    background-image:linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1517897286832-ba927d20e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGJsYWNrJTIwYW5kJTIwZ3JlZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+    position: relative;
+    display: block;
+    }
+
+    .What{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 30px;
+        font-weight: 500;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    } 
+
+    .do{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 30px;
+        font-weight: 500;
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 25px;
+        font-weight: 500;
+        position:absolute; 
+        top: 17%;
+        left: 15%;
+    }  
+
+    .shakeimage{
+        position:relative
+    }
+
+    .mainPhotoSecondDiv{
+        position:absolute; 
+        top: 20%;
+        left: 33%; 
+        text-align: center;
+    }
+
+    .photoSecondDiv{
+        width: 85%;
+        height: 95%;
+        border-radius:300px;
+        box-shadow:0 0 0  10px #0a0a0a ,0 0 0 12px rgba(44, 253, 7, 0.6) ;
+    }
+
+    .shoot{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 15px;
+        font-weight: 500;
+        position:absolute;
+        right:7%;
+        top:18%; 
+    }
+
+    .produce{
+        font-family: 'Kolker Brush', cursive;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 200px;
+        font-weight: 500;
+        position:absolute;  
+        left:15%;
+        top:50%;
+    }
+
+    .photoShoots{
+        font-family: 'Kolker Brush', cursive;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 200px;
+        font-weight: 500;
+        text-align:center;
+        position:absolute;  
+        left:25%;
+        top:65%;
+    }
+
+    .since{
+        font-family: 'Red Hat Mono', monospace;
+        color: rgba(44, 253, 7, 0.938);
+        font-size: 12px;
+        font-weight: 500;
+        position:absolute; 
+        bottom: 40px;
+        left: 100px;
+    }
+
+    .seventeen{
+        position: absolute; 
+        bottom: 100px;
+        left: 110px;
+    }
+
+    .seventeen img{
+        position: relative;
+        width:55%;
+    }
+
+
+
+    .arrow{
+        position:absolute;
+        text-align: right;
+        top: 200px;
+        right: 350px;
+    
+    }
+
+    .arrow img{
+        width: 3%;
+    }
+
+    .arrow2{
+        position:absolute;
+        text-align: right;
+        top: 230px;
+        right: 350px;
+    }
+
+    .arrow2 img{
+        width: 3%;
+        opacity: 0.4;
+    }
+
+    .arrow3{
+        position:absolute;
+        text-align: right;
+        top: 260px;
+        right: 350px;
+    }
+
+    .arrow3 img{
+        
+        width: 3%;
+        opacity: 0.2;
+    }
+
+    .round{
+        position: absolute; 
+        text-align: right;
+        bottom:80px;
+        right: 100px;
+        
+    } 
+
+    .round img{
+        position: relative;
+        width: 60%;
+    }
+
+    footer{
+        background-color: black;
+        /* background-color: darkcyan; */
+        width: 100%;
+        height: 18vh; 
+        position: relative;
+        /* margin:50px; */
+        display: block;
+        
+        }
+        
+        footer p{
+            text-align: center;
+            padding: 15px;
+            
+        }
+        
+        
+        .faceLink{
+            position: absolute;
+            left: 32%; 
+            top:45%;
+        }
+ 
+        .facebookFooter{
+           
+            width: 120%;
+            text-align: center;
+        }
+        
+        .instagramLink{
+            position: absolute;
+            left: 48%;
+            top:45%;
+        }
+        
+        .instagramFooter{
+            width: 120%;
+        }
+        
+        .telegramLink{
+            position: absolute;
+            left: 65%;
+            top:45%;
+        }
+ 
+        .telegramFooter{
+            width: 120%;
+        }
+        
+        .JoanaFooter{
+            text-align: left;
+            font-family: 'Red Hat Mono', monospace;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 20px;
+            font-weight: bold;
+            font-weight: 500;
+            position: absolute; 
+            top: 35px;
+            right: 50px;
+            white-space: nowrap;
+        }
+        
+        
+        
+        .phoneFooter{
+            text-align: right;
+            font-family: 'Red Hat Mono', monospace;
+            color: rgba(44, 253, 7, 0.938);
+            font-size: 15px;
+            font-weight: bold;
+            font-weight: 500;
+            position: absolute; 
+            top: 42px;
+            left: 50px;
+            white-space: nowrap;
+        }
+             
+   }
+
+   @media (min-width: 1200px) and (min-height: 790px) {
+   
+    .About p{
+        left:160px; 
+    }
+    .headerphone{
+       margin-left: 50%;
+    }
+    .fourthPhoto{
+        width: 70%;
+        height: 80%;
+    }
+
+    .history{
+        right:8%;
+    }  
+
+   }
+    
+   
+
+
+
+
+
