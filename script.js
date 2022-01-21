@@ -2,16 +2,23 @@
 
 
 // menu hamburger
-const about =document.querySelector('.About')
+const about =document.querySelector('.About');
 const button =document.querySelector('button');
-        const menu =document.querySelector('nav');
-        const body =document.querySelector('body');
+let w = window.outerWidth;
+const menu =document.querySelector('nav');
+const body =document.querySelector('body');
 
-        function showMenu(){
-            menu.classList.toggle('active');
-            if(menu.classList.contains('active')){
-                button.style.left ='300px'
-                about.style.visibility ='hidden'
+function showMenu(){
+  menu.classList.toggle('active');
+   if(menu.classList.contains('active')){
+       button.style.left ='300px'
+        if(w > 900)
+        {
+          about.style.visibility='visible'
+        }
+        else {
+          about.style.visibility ='hidden'
+        }
             }
             else{
                 button.style.left='0px'
