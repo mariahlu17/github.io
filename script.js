@@ -1,25 +1,28 @@
+
+
+
 // menu hamburger
 const about =document.querySelector('.About')
 const button =document.querySelector('button');
-        const menu =document.querySelector('aside');
+        const menu =document.querySelector('nav');
         const body =document.querySelector('body');
 
         function showMenu(){
             menu.classList.toggle('active');
             if(menu.classList.contains('active')){
                 button.style.left ='300px'
-                about.style.display ='none'
+                about.style.visibility ='hidden'
             }
             else{
                 button.style.left='0px'
-                about.style.display='block'
+                about.style.visibility='visible'
             }
         }
 
         function hideMenu(){
             menu.classList.remove('active')
             button.style.left ='0px'
-            about.style.display='block'
+            about.style.visibility ='visible'
         }
 
      
@@ -28,7 +31,7 @@ const button =document.querySelector('button');
         menu.addEventListener('click',hideMenu)
 
 //animation of photo
-//shaking image( Obraz 'seventeen' i 'round' drży po najechaniu kursorem)
+
     var range = 2;
     var stop_it = 0;
     var a = 1;
@@ -57,7 +60,7 @@ const button =document.querySelector('button');
         given.style.top = "0px";
     }
 
-//text animation of 'photo shoots'
+//text animation
 var TxtRotate = function(el, toRotate, period) {
 	this.toRotate = toRotate;
 	this.el = el;
