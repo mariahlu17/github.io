@@ -1,7 +1,3 @@
-
-
-
-// menu hamburger
 const about =document.querySelector('.About');
 const button =document.querySelector('button');
 let w = window.outerWidth;
@@ -10,8 +6,8 @@ const body =document.querySelector('body');
 
 function showMenu(){
   menu.classList.toggle('active');
-   if(menu.classList.contains('active')){
-       button.style.left ='300px'
+    if(menu.classList.contains('active')){
+        button.style.left ='300px'
         if(w > 900)
         {
           about.style.visibility='visible'
@@ -19,12 +15,13 @@ function showMenu(){
         else {
           about.style.visibility ='hidden'
         }
-            }
-            else{
-                button.style.left='0px'
-                about.style.visibility='visible'
-            }
+        
+}
+    else{
+          button.style.left='0px'
+          about.style.visibility='visible'
         }
+}
 
         function hideMenu(){
             menu.classList.remove('active')
