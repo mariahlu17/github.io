@@ -1355,7 +1355,7 @@ button {
             flex-wrap: wrap;
             position: relative; 
             padding-left: 200px; 
-            padding-right: 100px;
+            padding-right: 200px;
         }
     
         .firstDivPhotos{
@@ -1441,9 +1441,8 @@ button {
                font-weight: 500; 
                /* padding-left: 200%; */
                padding-bottom: 20%;
-               /* position:absolute;
-               right:10%;
-               bottom: 10%; */
+               position: relative;
+               left: 5%;
                text-align: center;
                white-space: nowrap;
            } 
