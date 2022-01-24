@@ -2276,7 +2276,6 @@ button {
                font-weight: 500;
                text-align:center;
                position: relative;
-               padding-top: 60%;
                
            }  
            
@@ -2287,8 +2286,7 @@ button {
                font-weight: 500;
                text-align: center;
                position: relative;
-               padding-top: 50%;
-               left: 30%;
+               left: 12%;
                white-space: nowrap;
            } 
     
@@ -2532,7 +2530,7 @@ button {
     position: relative;
     padding-top: 200px;
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 9%;
     padding-bottom: 250px;
     }
 
